@@ -1,0 +1,37 @@
+/* GRID LAYOUT USED IN ALL HTML PAGES EXCEPT bonus.html*/
+
+ /* <!-- This fulfills requirement 3.2.2 F)--> */
+.grid {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    grid-template-rows: 30% 200px auto;
+    box-shadow: inset;
+}
+    
+.grid > * {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+header,
+nav,
+aside{
+padding: 0.0em;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+article, section {
+    padding: 0.5em;
+}
+
+header, footer {
+grid-column: 1 / 4;
+}
+
+article {
+grid-column: 1 / 4;
+}

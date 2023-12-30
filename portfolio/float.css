@@ -1,0 +1,24 @@
+/* 
+FLOAT LAYOUT
+Used on bonus.html
+Applied to the gif
+*/
+
+/* <!-- This fulfills requirement 3.2.2 F)--> */
+.box1 {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-bottom: 1em;
+}
+
+.box2 {
+    padding-bottom: 10px;
+}
+  
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

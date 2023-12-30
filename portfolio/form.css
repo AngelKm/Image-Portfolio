@@ -1,0 +1,124 @@
+/* Form Styles used in contact.html*/
+
+/* <!-- This fulfills requirement 3.2.2 A)--> */
+/* <!-- This fulfills requirement 3.2.2 G)--> */
+/* <!-- This fulfills requirement 3.2.3 B)--> */
+/* Form style overall */
+#formsStyle {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px #7b7979;
+}
+
+/* <!-- This fulfills requirement 3.2.7 D)--> */
+/* Center the Form */
+.formCenter {
+    margin: auto;
+  width: 40%;
+  min-width: 450px;
+}
+
+/* <!-- This fulfills requirement 3.2.2 D)--> */
+/* Form fieldset style */
+form#survey > fieldset {
+    /* <!-- This fulfills requirement 3.2.2 B)--> */
+    background-color:rgba(192,192,192,0.3);
+    border: 1px;
+    border-radius: 5px;
+    border-color: navy;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* <!-- This fulfills requirement 3.2.3 A)--> */
+/* Text input box style */
+input[type=text], input[type=email], input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .95em;
+}
+  
+/* Text Area Styles */
+textarea {
+    height: 100px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: .95em;
+}
+
+/* Submit Buttons style */
+input[type=submit], input[type=reset] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+ 
+/* Cancel Buttons style */
+input[type=reset] {
+    width: 100%;
+    background-color: #a5a5a5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Submit Buttons style hover */
+input[type=submit]:hover {
+    background-color: #419545;
+}
+  
+/*  Cancel Buttons style hover */
+input[type=reset]:hover {
+    background-color: #858585;
+}
+
+/* Form Button Styles */
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Validation styles*/
+/* Textarea focus style */
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 255, 220);
+}
+
+/* <!-- This fulfills requirement 3.2.3 C)--> */
+/* When the input is valid */
+input#firstName:focus:valid,
+input#lastName:focus:valid,
+input#phone:focus:valid,
+input#email:focus:valid {
+    /* <!-- This fulfills requirement 3.2.2 B)--> */
+    background: hsla(120,100%,90%,0.9) url(accept.png) bottom right/contain no-repeat;
+}
+
+/* When the input is invalid */
+input#firstName:focus:invalid,
+input#lastName:focus:invalid,
+input#phone:focus:invalid,
+input#email:focus:invalid {
+    background: rgba(255,0,0,0.3) url(deny.png) bottom right/contain no-repeat;
+}

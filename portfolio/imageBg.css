@@ -1,0 +1,12 @@
+/* Style the Background Image in bonus.html */
+
+/* <!-- This fulfills requirement 3.2.2 A)--> */
+/* <!-- This fulfills requirement 3.2.2 D)--> */
+#bgImage{
+    background-image: url("gradient.png");
+    background-size: cover;
+    padding: auto;
+    margin: auto;
+    border: 0.5px solid rgb(185, 184, 184);
+    border-radius: 6px;
+}

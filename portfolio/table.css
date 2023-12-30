@@ -1,0 +1,36 @@
+/* TABLE STYLE FOR AI ART USED IN ai.html*/
+
+/* <!-- This fulfills requirement 3.2.2 A)--> */
+/* <!-- This fulfills requirement 3.2.5 A)--> */
+/* Entire table style */
+table {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <!-- This fulfills requirement 3.2.2 D)--> */
+/* the table and rows and columns */
+table, th, td {
+    border: solid 2px #D1D3D5;
+    border-collapse: collapse;
+    padding: 3px 4px;
+    text-align: center;
+}
+
+/* Make the table also responsive */
+/* split the gallery into columns.*/
+table {
+    line-height:0;
+    -webkit-column-count:3; /* split it into 3 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    column-count:3;
+    column-gap:7px;
+}
+
+ /* style the images that show in the gallery */
+table img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:0px; /* to match column gap */
+}

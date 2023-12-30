@@ -1,0 +1,105 @@
+
+/* STYLE THE GALLERY IMAGES used in index.html*/
+
+/* split the gallery into columns.*/
+#gallery {
+    line-height:0;
+    -webkit-column-count:3; /* split it into 2 columns */
+    -webkit-column-gap:5px; /* give it a 5px gap between columns */
+    column-count:3;
+    column-gap:7px;
+}
+
+ 
+/* style the images that show in the gallery */
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom:5px; /* to match column gap */
+}
+
+/* <!-- This fulfills requirement 3.2.7 A)--> */
+/* <!-- This fulfills requirement 3.2.7 C)--> */
+/* for mobile screen sizes*/
+/* For screens up to 1200px, reduce the columns to 2 */
+@media (max-width: 1200px) {
+    #gallery {
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+}
+
+/* For screens up to 1000px, reduce the columns to 2 */
+@media (max-width: 1000px) {
+    #gallery {
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+}
+
+/* For screens up to 800px, reduce the columns to 2 */
+@media (max-width: 800px) {
+    #gallery {
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+}
+
+/* For screens up to 400px, reduce the columns to 1 */
+@media (max-width: 400px) {
+    #gallery {
+     -webkit-column-count: 1;
+     column-count:         1;
+    }
+}
+ 
+
+/* Create a click me */
+/* fade in a box effect on images in gallery */
+/* Style the clickable images */ 
+.contain {
+    position: relative;
+    width: 100%;
+}
+  
+.images {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+}
+
+/* <!-- This fulfills requirement 3.2.5 B)--> */
+.middles {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.middles a{
+    text-decoration: none;
+}
+
+/* <!-- This fulfills requirement 3.2.2 H)--> */
+.contain:hover .images {
+    opacity: 0.8;
+    box-shadow: 1px 2px 6px 4px #b3b2b2;
+}
+
+.contain:hover .middles {
+    opacity: 0.8;
+}
+
+.texts {
+    background-color: #fbfbfe;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: 2px solid #f1f1f5;
+    border-radius: 28px;
+}

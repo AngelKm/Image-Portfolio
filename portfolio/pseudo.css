@@ -1,0 +1,16 @@
+/* Paragraph Bonus Page style*/
+
+/* Implement pseudo class first-of-type and last-of-type used in bonus.html */
+
+/* <!-- This fulfills requirement 3.2.2 C)--> */
+/* First Paragraph not in div */
+section p:first-of-type {
+    border-bottom: 1px solid rgba(56,41,48, .5); 
+    padding-bottom: 3px; 
+}
+
+/* Last Paragraph */
+section p:last-of-type {
+    border-bottom: 1px solid rgba(56,41,48, .5); 
+    padding-bottom: 3px; 
+}

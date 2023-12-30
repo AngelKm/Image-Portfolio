@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="grids.css">
+    <script src="validateForm.js" async></script>
+    <script src="footerUpdate.js" defer></script>   
+
+ </head>
+
+ <body>
+    <header>
+        <h1>Angel Masano</h1>
+       <nav class="nav main-nav"> <a id="navicon" href="#"></a>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html" class="active">Contact</a></li> 
+             <li><a href="bonus.html">Bonus</a></li>
+             <li><a href="ai.html">AI</a></li>
+
+
+          </ul>
+       </nav>
+    </header>
+    <section>
+        <h1>Contact</h1>
+        <p id="links">
+            <!-- This fulfills requirement 3.2.2 C)-->
+            <a href="mailto:masanoangel@gmail.com">masanoangel@gmail.com</a> | 
+            <a href="https://www.linkedin.com/in/angel-masano-9921b11b7/" target="_blank">LinkedIn profile</a> | 
+            Tel: <a href="tel:+7785865267" target="_blank">(778) 586 5267</a></p>
+        <div id="formsStyle" class="formCenter">
+
+        <!-- This fulfills requirement 3.2.2 A)-->
+         <!-- This fulfills requirement 3.2.2 G)-->
+         <!-- This fulfills requirement 3.2.3 B)-->
+         <!-- This fulfills requirement 3.2.7 D)-->
+        <form id="survey">
+
+          <!-- This fulfills requirement 3.2.2 B)-->
+           <!-- This fulfills requirement 3.2.2 D)-->
+          <fieldset id="custInfo">
+            <!-- This fulfills requirement 3.2.3 A)-->                
+                <div class="formRow">
+                <label for="name">First Name *</label>
+                <!-- This fulfills requirement 3.2.3 C)-->
+                <input name="firstName" id="firstName" type="text" required />
+                </div>
+                
+                <div class="formRow">
+                    <label for="name">Last Name *</label>
+                    <input name="lastName" id="lastName" type="text" required />
+                </div>
+                
+                <div class="formRow">
+                <label for="email">E-mail *</label>
+                <input name="custEmail" id="email" type="email" required/> 
+                </div>
+
+                <div class="formRow">
+                <label for="phone">Phone number</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" 
+                pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/> 
+                </div>
+                
+                
+                <label for="commBox">Enter your message here *</label><br>
+                <textarea name="custExp" id="commBox" required></textarea>
+                
+              </fieldset>
+            <div id="buttons">
+                <!-- This fulfills requirement 3.2.6 B)-->
+                <!-- This fulfills requirement 3.2.6 C)-->
+                <input type="submit" value="Submit" id="subButton">
+                <input type="reset" value="Cancel">
+            </div>
+            <p id="demo"></p>
+        </form>
+        </div>
+    </section>
+
+    
+    <footer>
+        <nav class="nav navigation">
+            <ul>
+              <li><a href="https://www.linkedin.com/in/angel-masano-9921b11b7/" target="_blank"><img src="linkedin.svg" alt="Linkedin icon" > LinkedIn</a></li>
+              <li><a href="https://www.schoolofmotion.com/profile/akmasano" target="_blank"><img src="som.svg" alt="School of motion icon" > School of Motion</a></li>
+               <li><a href="https://www.facebook.com/angel.masano.1/" target="_blank"><img src="fb.svg" alt="Fscebook icon"> Facebook</a></li>   
+          </ul>    
+         </nav>
+         <!-- This fulfills requirement 3.2.2 A)-->
+        <p> &copy; <span id="copyright-year"></span> by Angel Masano. Proudly created with Visual Studio. All Rights Reserved.</p>
+    </footer>    
+ </body>
+ </html>
